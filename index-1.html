@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Continue Statement</h1>
+    <p id="demo"></p>
+    <script>
+        var val = ["javascript1", "javascript2", "javascript3",
+            "javascript4", "javascript5"];
+        var print = "";
+
+        breaklabel: {
+            print += val[0] + "<br>" + val[1] + "<br>";
+            break breaklabel;
+            print += val[2] + "<br>" + val[3] + "<br>" + val[4];
+        }
+
+        document.getElementById("demo").innerHTML = print; 
+    </script>
+</body>
+
+</html>

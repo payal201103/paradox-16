@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Block Scope</h1>
+    <script>
+        function foo() {
+            if (true) {
+                var fruit1 = 'apple';
+                const fruit2 = 'banana';
+                let fruit3 = 'strawberry';
+
+            }
+            document.write(fruit1);
+            document.write(fruit2);
+            document.write(fruit3);
+        }
+
+        foo();
+    </script>
+</body>
+
+</html>
